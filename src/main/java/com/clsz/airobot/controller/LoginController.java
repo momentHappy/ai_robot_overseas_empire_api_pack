@@ -1,6 +1,7 @@
 package com.clsz.airobot.controller;
 
 
+import com.clsz.airobot.entity.CommonDomain;
 import com.clsz.airobot.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +16,11 @@ public class LoginController {
     LoginService loginService;
 
     @RequestMapping("/login")
-    public String login() {
+    public String login(CommonDomain commonDomain) {
 
         log.info("*****************   login   *****************");
 
-        return loginService.login();
+        return loginService.login(commonDomain);
     }
 
 }

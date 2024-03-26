@@ -1,7 +1,7 @@
 package com.clsz.airobot.service.impl;
 
 import cn.hutool.http.HttpUtil;
-import com.clsz.airobot.entity.AiRequestUrl;
+import com.clsz.airobot.config.AiRequestUrl;
 import com.clsz.airobot.service.CultivateHeroService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
