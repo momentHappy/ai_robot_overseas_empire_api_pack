@@ -1,12 +1,34 @@
 package com.clsz.airobot.service;
 
+import com.clsz.airobot.entity.CommonDomain;
+
 public interface SoldierService {
 
-    String update();
+    /**
+     * 10.1 更新士兵数量
+     * @param commonDomai
+     * @return
+     */
+    String update(CommonDomain commonDomai);
 
-    String reinforce();
+    /**
+     *10.2 英雄补兵
+     * @param commonDomai
+     * @return
+     */
+    String reinforce(CommonDomain commonDomai);
 
-    String soldierList();
+    /**
+     *10.3 查看士兵信息
+     * @param commonDomai
+     * @return
+     */
+    String soldierList(CommonDomain commonDomai);
 
-    String autoFull();
+    /**
+     *
+     * @param commonDomai
+     * @return
+     */
+    String autoFull(CommonDomain commonDomai);
 }

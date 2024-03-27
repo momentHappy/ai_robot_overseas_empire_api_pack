@@ -1,24 +1,67 @@
 package com.clsz.airobot.service;
 
+import com.clsz.airobot.entity.CommonDomain;
+
 public interface CultivateHeroService {
 
-    String heroList();
+    /**
+     * 5.1获取所有将领列表
+     * @param commonDomain
+     * @return
+     */
+    String heroList(CommonDomain commonDomain);
 
-    String heroCreate();
+    /**
+     * 5.2获得新将领
+     * @param commonDomain
+     * @return
+     */
+    String heroCreate(CommonDomain commonDomain);
 
-    String heroBreak();
+    /**
+     * 5.3将领突破
+     * @param commonDomain
+     * @return
+     */
+    String heroBreak(CommonDomain commonDomain);
 
-    String heroQueueList();
+    /**
+     * 5.4获取将领布阵队列
+     * @param commonDomain
+     * @return
+     */
+    String heroQueueList(CommonDomain commonDomain);
 
-    String heroQueueSet();
+    @Deprecated
+    String heroQueueSet(CommonDomain commonDomain);
 
-    String heroUpdate();
+    /**
+     * 5.6更新将领数据
+     * @param commonDomain
+     * @return
+     */
+    String heroUpdate(CommonDomain commonDomain);
 
-    String heroSetPos();
+    /**
+     * 5.7调整将领出战顺序
+     * @param commonDomain
+     * @return
+     */
+    String heroSetPos(CommonDomain commonDomain);
 
-    String heroOnBattle();
+    /**
+     * 5.8上阵出战将领
+     * @param commonDomain
+     * @return
+     */
+    String heroOnBattle(CommonDomain commonDomain);
 
-    String heroCollectAndWall();
+    /**
+     * 5.9上下阵 采集和城防英雄
+     * @param commonDomain
+     * @return
+     */
+    String heroCollectAndWall(CommonDomain commonDomain);
 
 
 }

@@ -154,6 +154,11 @@ public interface MapService {
      */
     String getFightRank(CommonDomain commonDomain);
 
+    /**
+     * 4.24 获取叛军来袭数据
+     * @param commonDomain
+     * @return
+     */
     String getRebellion(CommonDomain commonDomain);
 
 }
