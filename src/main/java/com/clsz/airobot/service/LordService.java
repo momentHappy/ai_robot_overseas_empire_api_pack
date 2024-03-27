@@ -1,11 +1,13 @@
 package com.clsz.airobot.service;
 
+import com.clsz.airobot.entity.CommonDomain;
+
 public interface LordService {
 
-    String lordUpdate();
+    String lordUpdate(CommonDomain commonDomain);
 
-    String lordProperty();
+    String lordProperty(CommonDomain commonDomain);
 
-    String lordLookOver();
+    String lordLookOver(CommonDomain commonDomain);
 
 }

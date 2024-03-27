@@ -1,8 +1,20 @@
 package com.clsz.airobot.service;
 
+import com.clsz.airobot.entity.CommonDomain;
+
 public interface SocialChatService {
 
-    String send();
+    /**
+     * 23.1 发送聊天
+     * @param commonDomain
+     * @return
+     */
+    String send(CommonDomain commonDomain);
 
-    String sharePos();
+    /**
+     *  23.2 坐标分享
+     * @param commonDomain
+     * @return
+     */
+    String sharePos(CommonDomain commonDomain);
 }
